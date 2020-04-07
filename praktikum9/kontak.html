@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM KONTAK</title>
+        <style type="text/css">
+            #tabel {
+                background-color: white;
+                border-color: black;
+            }
+            #header {
+                color: black;
+                text-align: center;
+                font-size: 50pt;
+            }
+            #tr {
+                height: 30pt;
+                margin: 500pt;
+                color: black;
+                font-family: Comic Sans MS;
+                text-align: center;
+            }
+            body {
+                background-color: grey;
+            }
+            input[type=text]{margin: 15px auto 15px; width: 400px;  } 
+            
+        </style>
+    </head>
+    <body>
+
+        <div id="header"> FORM KONTAK</div>
+        <form method="post" action="simpan_kontak.php">
+            <table id="tabel" border="1" cellpadding="2" cellspacing="3" width="650" height="500" align="center">
+                <tr id="tr">
+                    <td>Nama</td>
+                    <td align="center">
+                        <input type="text" name="Nama"></td>
+                </tr>
+
+                <tr id="tr">
+                    <td>Jenis Kelamin</td>
+                    <td align="center">
+                        <input type="radio" name="Jkel" value="Laki-Laki"/>1. Laki-Laki<br />
+                        <input type="radio" name="Jkel" value="Perempuan"/>2. Perempuan<br/></td>
+                </tr>
+
+                <tr id="tr">
+                    <td>Email</td>
+                    <td align="center"><input type="text" name="Email"></td>
+                </tr>
+
+                <tr id="tr">
+                    <td>Alamat</td>
+                    <td align="center"><input type="text" name="Alamat"></td>
+                </tr>
+
+                <tr id="tr">
+                    <td>Kota</td>
+                    <td align="center"><input type="text" name="Kota"></td>
+                </tr>
+
+                <tr id="tr" >
+                    <td>Pesan</td>
+                    <td align="center"><textarea name="Pesan"></textarea></td>
+                </tr>
+
+                <tr id="tr">
+                    <td colspan="5" align="center">
+                    <button type="submit" value="simpan">SIMPAN</button>
+                    <button><a href="http://localhost/praktikum9/login/">CEK DATA</a></button></td>
+                </tr>
+                
+            </table>
+        </form>
+    </body>
+</html>
